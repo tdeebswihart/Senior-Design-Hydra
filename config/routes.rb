@@ -1,4 +1,4 @@
-SeniorDesignCurate::Application.routes.draw do
+Curate::Application.routes.draw do
   root 'catalog#index'
   Blacklight.add_routes(self)
   HydraHead.add_routes(self)
