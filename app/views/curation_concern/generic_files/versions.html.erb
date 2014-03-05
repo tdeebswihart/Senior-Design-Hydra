@@ -1,0 +1,33 @@
+<%= simple_form_for curation_concern, :url => rollback_curation_concern_generic_file_path(curation_concern), method: :put do |f| %>
+  <% if curation_concern.persisted? %>
+    <fieldset>
+      <legend> Versioning</legend>
+      <%#
+        TODO - Cleanup up this violation of Law of Demeter
+        curation_concern.versions should yield a version object
+        * version#created_on
+        * version#committer
+        * version#number
+      %>
+      <%= "Current version uploaded on #{curation_concern.latest_version.formatted_created_on} [by #{curation_concern.latest_version.committer_name}]"%>
+      <%= f.input :version , label: "Restore Previous Version from" do %>
+        <%= f.select :version, curation_concern.versions.map { |version| ["Restore from #{version.formatted_created_on} [ by #{version.committer_name}]", version.version_id, { class: version.committer_name }] }, include_blank: true %>
+      <% end %>
+    </fieldset>
+  <%- end -%>
+
+  <div class="row">
+    <div class="span12 form-actions">
+      <%= f.submit(
+        (curation_concern.persisted? ? "Rollback to selected File" : %(Attach to #{parent.human_readable_type})),
+        class: 'btn btn-primary'
+      ) %>
+      <%# TODO Cancel button behavior should be context aware.
+        Going back to the dashboard isn't always the expected behavior. %>
+      <%= link_to 'Cancel', polymorphic_path([:curation_concern, parent]), class: 'btn btn-link' %>
+    <% unless curation_concern.new_record? -%>
+      <%= link_to 'Go to File Record View', polymorphic_path([:curation_concern, curation_concern]), class: 'btn btn-info pull-right' %>
+    <% end -%>
+    </div>
+  </div>
+<%- end -%>

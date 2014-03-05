@@ -1,0 +1,12 @@
+<% unless curation_concern.persisted? %>
+  <div class="row with-headroom">
+      <div class="span12">
+        <fieldset class="required">
+          <legend>
+            Attach Your File
+          </legend>
+          <%= f.input :files, as: :file, label: 'Upload your file' %>
+        </fieldset>
+      </div>
+  </div>
+<% end %>

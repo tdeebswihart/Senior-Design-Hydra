@@ -1,0 +1,21 @@
+<%# This is a search result view %>
+<% noid = person.noid %>
+<% solr_doc = person.inner_object.solr_doc %>
+<li id="document_<%= noid %>" class="search-result">
+
+  <%= render :partial => 'catalog/_index_partials/identifier_and_action', locals: { document: person, counter: person_counter, title_link_target: person, title_link_text: person.name, edit_path: '' } %>
+
+  <div class="row-fluid">
+
+    <div class="span2">
+      <%= render :partial => 'catalog/_index_partials/thumbnail_display', locals: {document: person} %>
+    </div>
+
+    <div class="span10">
+      <dl class="attribute-list">
+      </dl>
+    </div>
+
+  </div>
+
+</li>

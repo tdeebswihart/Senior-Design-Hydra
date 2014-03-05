@@ -1,0 +1,18 @@
+<div id="masthead">
+  <div class="navbar">
+    <div class="nav-inner">
+      <nav class="container">
+        <ul class="nav">
+          <li <%= 'class=active' if params[:controller] == "catalog" and action_name == "index" %>><a href="/" class="top_nav">Home</a></li>
+          <li <%= 'class=active' if action_name == "about" %>><a href="/about/" class="top_nav">About</a></li>
+          <li <%= 'class=active' if action_name == "help" %>><a href="/help/" class="top_nav">Help</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li>
+            <div class="btn-group">&nbsp;</div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
