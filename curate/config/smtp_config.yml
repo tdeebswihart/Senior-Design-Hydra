@@ -1,0 +1,13 @@
+development: &development
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  smtp_domain: example.com
+  smtp_authentication_type: plain
+  smtp_user_name: username
+  smtp_password: password
+  smtp_enable_starttls_auto: true
+  smtp_delivery_method: test
+test: &test
+  <<: *development
+ci:
+  <<: *test

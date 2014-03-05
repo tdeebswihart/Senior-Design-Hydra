@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+  - "2.0.0"
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+script: "rake ci"
+
+notifications:
+  irc: "irc.freenode.org#ndlib"
+
+bundler_args: --without headless
+
+before_install:
+  - gem install bundler
+
+branches:
+  only:
+    - master
+    - develop
