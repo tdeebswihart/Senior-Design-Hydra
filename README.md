@@ -8,4 +8,4 @@ all you need to do is `./start.sh`. This does:
 - `rake jetty:start`
 - `rails s -d`
 
-so that you don't have to remember.
+So that you don't have to remember.
