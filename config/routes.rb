@@ -4,6 +4,8 @@ Curate::Application.routes.draw do
   HydraHead.add_routes(self)
     devise_for :users, controllers: { sessions: :sessions, registrations: :registrations}
 
+  get 'upload' => 'upload#index'
+  post 'uploadFile' => 'upload#uploadFile'
 
   curate_for
 
