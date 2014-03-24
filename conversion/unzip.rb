@@ -8,15 +8,14 @@ def unpack_to_folder(name)
   Zip::File.open("#{name}.zip") do |zip_file|
     zip_file.each do |entry|
       puts "Extracting #{entry.name}"
-      
-      Dir.mkdir 'aipStore' unless File.exists? "aipStore"
+
+      Dir.mkdir "#{name}" unless File.exists? "#{name}"
 
       # Dumps zip contents to files.
-      entry.extract("aipStore/#{entry.name}")
+      entry.extract("#{name}/#{entry.name}")
 
       # Read into memory if necessary
       # content = entry.get_input_stream.read
     end
   end
 end
-
