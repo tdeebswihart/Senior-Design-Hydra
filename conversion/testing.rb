@@ -13,10 +13,16 @@ class Hash_To_Obj
   end
 end
 
-config = XmlSimple.xml_in('amets.xml', { 'KeyAttr' => 'name' })
+# Using XmlSimple to convert the XML to a (messy) hash.
+# Currently set to read in the mets.xml file in the main AIP zip.
+config = XmlSimple.xml_in('mets.xml', { 'KeyAttr' => 'name' })
 
+# Converts the hash to a Ruby object.
 obj = Hash_To_Obj.new(config)
 
+# This is a bit "magic numbery"
+# I'm not totally sure that this series of calls will always get the right value across all AIP files.
+# For the ones we have, it pulls out the names of the datastream zip files.
 obj.structMap[0]["div"][0]["div"].each { |x|
   puts x["mptr"][0]["xlink:href"]
 }
