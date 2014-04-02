@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<mets ID="DSpace_ITEM_123456789-20893" OBJID="hdl:123456789/20893" TYPE="DSpace ITEM" PROFILE="DSpace METS SIP Profile 1.0" xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd">
+ <metsHdr CREATEDATE="2014-01-16T11:53:12">
+  <agent ROLE="CUSTODIAN" TYPE="ORGANIZATION">
+   <name>Aardvark: GT Archives Digital Items Repository</name>
+  </agent>
+ </metsHdr>
+ <dmdSec ID="dmdSec_1">
+  <mdWrap MDTYPE="MODS">
+   <xmlData xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-1.xsd"><mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-1.xsd">
+  <mods:name>
+    <mods:role>
+      <mods:roleTerm type="text">editor</mods:roleTerm>
+    </mods:role>
+    <mods:namePart>Katie Gentilello and Wendy Hagenmaier</mods:namePart>
+  </mods:name>
+  <mods:originInfo>
+    <mods:dateOther encoding="iso8601">ca. 1940s</mods:dateOther>
+  </mods:originInfo>
+  <mods:extension>
+    <mods:dateAccessioned encoding="iso8601">2012-10-30T20:39:34Z</mods:dateAccessioned>
+  </mods:extension>
+  <mods:extension>
+    <mods:dateAvailable encoding="iso8601">2012-10-30T20:39:34Z</mods:dateAvailable>
+  </mods:extension>
+  <mods:originInfo>
+    <mods:dateIssued encoding="iso8601">1940</mods:dateIssued>
+  </mods:originInfo>
+  <mods:identifier type="uri">http://hdl.handle.net/123456789/20893</mods:identifier>
+  <mods:note>Digital image created at the Georgia Tech Library in 2010. Scanned at 600ppi.||Physical Condition: Good</mods:note>
+  <mods:abstract>This is a studio portrait of Ralph G. Holland in white dress U.S. Navy uniform and cover.||Ralph G. Holland was a member of the Georgia Tech Class of 1939.</mods:abstract>
+  <mods:physicalDescription>
+    <mods:extent>1 gelatin silver print : toned b/w, warm brown sepia ; 9 x 7 in.</mods:extent>
+  </mods:physicalDescription>
+  <mods:language>
+    <mods:languageTerm authority="rfc3066">en</mods:languageTerm>
+  </mods:language>
+  <mods:originInfo>
+    <mods:publisher>Georgia Tech Archives</mods:publisher>
+  </mods:originInfo>
+  <mods:relatedItem>
+    <mods:titleInfo>
+      <mods:title>GP003</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:subject>
+    <mods:topic>Portraits</mods:topic>
+  </mods:subject>
+  <mods:titleInfo>
+    <mods:title>Ralph G. Holland</mods:title>
+  </mods:titleInfo>
+  <mods:genre>Photographic prints</mods:genre>
+</mods:mods></xmlData>
+  </mdWrap>
+ </dmdSec>
+ <amdSec ID="amd_5">
+  <techMD ID="techMD_6">
+   <mdWrap MDTYPE="PREMIS">
+    <xmlData xmlns:premis="http://www.loc.gov/standards/premis" xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd"><premis:premis xmlns:premis="http://www.loc.gov/standards/premis">
+  <premis:object>
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URL</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>http://aardvark.library.gatech.edu/bitstream/123456789%2F20893/1/vac002_003.jpg</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCategory>File</premis:objectCategory>
+    <premis:objectCharacteristics>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+        <premis:messageDigest>c043c83a6386027a47b8c64075300c6d</premis:messageDigest>
+      </premis:fixity>
+      <premis:size>403327</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>image/jpeg</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>vac002_003.jpg</premis:originalName>
+  </premis:object>
+</premis:premis></xmlData>
+   </mdWrap>
+  </techMD>
+ </amdSec>
+ <amdSec ID="amd_8">
+  <techMD ID="techMD_9">
+   <mdWrap MDTYPE="PREMIS">
+    <xmlData xmlns:premis="http://www.loc.gov/standards/premis" xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd"><premis:premis xmlns:premis="http://www.loc.gov/standards/premis">
+  <premis:object>
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URL</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>http://aardvark.library.gatech.edu/bitstream/123456789%2F20893/2/vac002_003.tif</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCategory>File</premis:objectCategory>
+    <premis:objectCharacteristics>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+        <premis:messageDigest>eb0b5af9985c4a5787c9485c8fea5a95</premis:messageDigest>
+      </premis:fixity>
+      <premis:size>24858240</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>image/tiff</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>vac002_003.tif</premis:originalName>
+  </premis:object>
+</premis:premis></xmlData>
+   </mdWrap>
+  </techMD>
+ </amdSec>
+ <fileSec>
+  <fileGrp USE="CONTENT">
+   <file ID="bitstream_1" MIMETYPE="image/jpeg" SEQ="1" SIZE="403327" CHECKSUM="c043c83a6386027a47b8c64075300c6d" CHECKSUMTYPE="MD5" ADMID="amd_5" GROUPID="GROUP_bitstream_1">
+    <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="bitstream_56753.jpeg"/>
+   </file>
+   <file ID="bitstream_2" MIMETYPE="image/tiff" SEQ="2" SIZE="24858240" CHECKSUM="eb0b5af9985c4a5787c9485c8fea5a95" CHECKSUMTYPE="MD5" ADMID="amd_8" GROUPID="GROUP_bitstream_2">
+    <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="bitstream_56754.tiff"/>
+   </file>
+  </fileGrp>
+ </fileSec>
+ <structMap ID="struct_2" LABEL="DSpace Object" TYPE="LOGICAL">
+  <div ID="div_3" DMDID="dmdSec_1" TYPE="DSpace Object Contents">
+   <div ID="div_4" TYPE="DSpace BITSTREAM">
+    <fptr FILEID="bitstream_1"/>
+   </div>
+   <div ID="div_7" TYPE="DSpace BITSTREAM">
+    <fptr FILEID="bitstream_2"/>
+   </div>
+  </div>
+ </structMap>
+</mets>

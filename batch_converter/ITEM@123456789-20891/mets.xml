@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<mets ID="DSpace_ITEM_123456789-20891" OBJID="hdl:123456789/20891" TYPE="DSpace ITEM" PROFILE="DSpace METS SIP Profile 1.0" xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd">
+ <metsHdr CREATEDATE="2014-01-16T11:52:55">
+  <agent ROLE="CUSTODIAN" TYPE="ORGANIZATION">
+   <name>Aardvark: GT Archives Digital Items Repository</name>
+  </agent>
+ </metsHdr>
+ <dmdSec ID="dmdSec_1">
+  <mdWrap MDTYPE="MODS">
+   <xmlData xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-1.xsd"><mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-1.xsd">
+  <mods:name>
+    <mods:role>
+      <mods:roleTerm type="text">editor</mods:roleTerm>
+    </mods:role>
+    <mods:namePart>Katie Gentilello and Wendy Hagenmaier</mods:namePart>
+  </mods:name>
+  <mods:originInfo>
+    <mods:dateOther encoding="iso8601">Undated</mods:dateOther>
+  </mods:originInfo>
+  <mods:extension>
+    <mods:dateAccessioned encoding="iso8601">2012-10-30T20:39:25Z</mods:dateAccessioned>
+  </mods:extension>
+  <mods:extension>
+    <mods:dateAvailable encoding="iso8601">2012-10-30T20:39:25Z</mods:dateAvailable>
+  </mods:extension>
+  <mods:originInfo>
+    <mods:dateIssued encoding="iso8601" />
+  </mods:originInfo>
+  <mods:identifier type="uri">http://hdl.handle.net/123456789/20891</mods:identifier>
+  <mods:note>Digital image created at the Georgia Tech Library in 2010. Scanned at 600ppi.||Physical Condition: Good</mods:note>
+  <mods:abstract>William Murray Werner graduated from Georgia Tech in 1917 with a degree in Civil Engineering. At the time this photo was received by the donor, Mr. Werner was president of Werner Construction Company.</mods:abstract>
+  <mods:physicalDescription>
+    <mods:extent>1 gelatin silver print : toned b/w ;  9 7/8  x  7 7/8 in.</mods:extent>
+  </mods:physicalDescription>
+  <mods:language>
+    <mods:languageTerm authority="rfc3066">en</mods:languageTerm>
+  </mods:language>
+  <mods:originInfo>
+    <mods:publisher>Georgia Tech Archives</mods:publisher>
+  </mods:originInfo>
+  <mods:relatedItem>
+    <mods:titleInfo>
+      <mods:title>GP001</mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:subject>
+    <mods:topic>Portraits</mods:topic>
+  </mods:subject>
+  <mods:titleInfo>
+    <mods:title>William Murray Werner</mods:title>
+  </mods:titleInfo>
+  <mods:genre>Photographic prints</mods:genre>
+</mods:mods></xmlData>
+  </mdWrap>
+ </dmdSec>
+ <amdSec ID="amd_5">
+  <techMD ID="techMD_6">
+   <mdWrap MDTYPE="PREMIS">
+    <xmlData xmlns:premis="http://www.loc.gov/standards/premis" xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd"><premis:premis xmlns:premis="http://www.loc.gov/standards/premis">
+  <premis:object>
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URL</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>http://aardvark.library.gatech.edu/bitstream/123456789%2F20891/1/vac002_001.jpg</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCategory>File</premis:objectCategory>
+    <premis:objectCharacteristics>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+        <premis:messageDigest>2c750b6156e1f2096758abd2a379407c</premis:messageDigest>
+      </premis:fixity>
+      <premis:size>426810</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>image/jpeg</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>vac002_001.jpg</premis:originalName>
+  </premis:object>
+</premis:premis></xmlData>
+   </mdWrap>
+  </techMD>
+ </amdSec>
+ <amdSec ID="amd_8">
+  <techMD ID="techMD_9">
+   <mdWrap MDTYPE="PREMIS">
+    <xmlData xmlns:premis="http://www.loc.gov/standards/premis" xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd"><premis:premis xmlns:premis="http://www.loc.gov/standards/premis">
+  <premis:object>
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URL</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>http://aardvark.library.gatech.edu/bitstream/123456789%2F20891/2/vac002_001.tif</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCategory>File</premis:objectCategory>
+    <premis:objectCharacteristics>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+        <premis:messageDigest>a9c1d58901f14ebb7fa3a5ecee5d8feb</premis:messageDigest>
+      </premis:fixity>
+      <premis:size>29826318</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>image/tiff</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>vac002_001.tif</premis:originalName>
+  </premis:object>
+</premis:premis></xmlData>
+   </mdWrap>
+  </techMD>
+ </amdSec>
+ <fileSec>
+  <fileGrp USE="CONTENT">
+   <file ID="bitstream_1" MIMETYPE="image/jpeg" SEQ="1" SIZE="426810" CHECKSUM="2c750b6156e1f2096758abd2a379407c" CHECKSUMTYPE="MD5" ADMID="amd_5" GROUPID="GROUP_bitstream_1">
+    <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="bitstream_56749.jpeg"/>
+   </file>
+   <file ID="bitstream_2" MIMETYPE="image/tiff" SEQ="2" SIZE="29826318" CHECKSUM="a9c1d58901f14ebb7fa3a5ecee5d8feb" CHECKSUMTYPE="MD5" ADMID="amd_8" GROUPID="GROUP_bitstream_2">
+    <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="bitstream_56750.tiff"/>
+   </file>
+  </fileGrp>
+ </fileSec>
+ <structMap ID="struct_2" LABEL="DSpace Object" TYPE="LOGICAL">
+  <div ID="div_3" DMDID="dmdSec_1" TYPE="DSpace Object Contents">
+   <div ID="div_4" TYPE="DSpace BITSTREAM">
+    <fptr FILEID="bitstream_1"/>
+   </div>
+   <div ID="div_7" TYPE="DSpace BITSTREAM">
+    <fptr FILEID="bitstream_2"/>
+   </div>
+  </div>
+ </structMap>
+</mets>
