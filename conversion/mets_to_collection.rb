@@ -3,7 +3,7 @@ require 'nokogiri'
 require "./trivial_collection"
 
 translation_map = {
-	# Prefix:namespace => {suffix => new_name}
+	# prefix|namespace => {tag => new_name}
 	"mods|http://www.loc.gov/mods/v3" => {
 		"title" => "title",
 		"abstract" => "abstract",
@@ -26,10 +26,17 @@ translation_map.each_pair do |prefix_with_namespace, tags|
 	prefix = parts[0]
 	namespace = parts[1]
 	tags.each_pair do |tag, attr|
-		# puts "//#{prefix}:#{tag}/text(), #{prefix} => #{namespace}"
 		val = doc.xpath("//#{prefix}:#{tag}/text()", "#{prefix}" => "#{namespace}")[0].text
+		# the following line calls collection.attr = val
+		# where attr is the name of an attribute of the collection object
+		#
+		# the function "intern" turns a string into a symbol: "title".intern -> :title
+		# 
+		# for example, let attr = "title", and let val = "Title String"
+		# with those values this line uses metaprogramming to call:
+		#    collection.title = "Title String"
+		#
 		collection.send("#{attr.intern}=", val)
-		# puts "no"
 	end
 end
 
