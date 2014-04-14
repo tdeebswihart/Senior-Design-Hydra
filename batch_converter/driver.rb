@@ -19,4 +19,4 @@ class Driver
 		puts "All items extracted, ready to augment collection with items"
 	end
 end
-Driver.new().unzip('.')
+Driver.new().unzip('data')

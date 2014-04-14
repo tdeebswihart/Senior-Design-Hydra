@@ -1,6 +1,6 @@
 class TrivialCollection
 	# doc.xpath('//mods:namePart', 'mods' => 'http://www.loc.gov/mods/v3')
-	attr_accessor :abstract, :note, :identifier, :title, :access_condition
+	attr_accessor :abstract, :note, :identifier, :title, :access_condition, :files
 	
 	def to_s
 		str = "<Trivial Collection\n"
@@ -9,5 +9,10 @@ class TrivialCollection
 		end
 		str += "/>"
 		return str
+	end
+
+	def add_file(fname)
+		self.files ||= []
+		self.files.append(GenericFile.new(fname))
 	end
 end
