@@ -16,6 +16,5 @@
 /tmp
 
 jetty/
-
 # Ignore system files
 .DS_Store
