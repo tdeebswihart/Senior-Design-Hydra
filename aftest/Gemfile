@@ -1,0 +1,2 @@
+gem 'active-fedora', github: "projecthydra/active_fedora"
+source 'https://rubygems.org'
