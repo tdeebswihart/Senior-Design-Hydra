@@ -17,8 +17,7 @@ class Driver
 				puts "Extracted #{basename}, ready to hydrate item model"
 				# should call other code, then clean up the extracted zip file here
 				# this should call the BUILD_MODEL code
-		  	end
-			if item.split('aip').length > 1
+			elsif item.split('aip').length > 1
 				c = CollectionBuilder.build(xmlfname)
 				puts c.to_s
 				# collection here should be SAVED to ActiveFedora, Solr once its hooked up
