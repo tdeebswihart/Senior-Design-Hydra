@@ -1,21 +1,9 @@
 #!/usr/bin/env ruby
 require 'nokogiri'
-require "./trivial_collection"
+require "./models/trivial_collection"
+# require "./models/trivial_model"
 class CollectionBuilder
-	def self.build(xmlfname)
-		translation_map = {
-		# prefix|namespace => {tag => new_name}
-		"mods|http://www.loc.gov/mods/v3|/text()" => {
-			"title" => "title",
-			"abstract" => "abstract",
-			"identifier" => "identifier",
-			"note" => "note",
-			"accessCondition" => "access_condition",
-			},
-			# "@xlink|http://www.w3.org/1999/xlink" => { "href" => "items" },
-
-		}
-
+	def build(xmlfname, translation_map)
 		xml_file = File.open(xmlfname, 'r')
 		doc = Nokogiri::XML(xml_file)
 

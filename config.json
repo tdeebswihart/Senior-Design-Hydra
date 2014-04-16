@@ -1,0 +1,9 @@
+{
+	"mods|http://www.loc.gov/mods/v3|/text()": {
+		"title": "title",
+		"abstract": "abstract",
+		"identifier": "identifier",
+		"note": "note",
+		"accessCondition": "access_condition"
+	}
+}
