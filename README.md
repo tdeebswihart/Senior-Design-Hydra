@@ -1,11 +1,12 @@
 Senior-Design-Hydra
 ===================
-Upon first pull run `rails g hydra:jetty`—this will install the Jetty bits necessary for hydra. This isn't included in the repo itself because the jetty files are somewhere close to 200MB and don't need to be shoveled to and from github.
+All curate files have been paved over, the only files here are now the conversion scripts
 
 ###First Time configuration
+- `cd batch_converter`
 - `bundle install`
-- `rake db:migrate`
+- (put instructions for pulling down hydra-jetty here)
 
 ###Running the application
-- `rake jetty:start`
-- `rails s -d`
+- `ruby driver.rb`
+
