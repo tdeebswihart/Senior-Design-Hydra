@@ -11,7 +11,7 @@ All curate files have been paved over, the only files here are now the conversio
 - `ruby driver.rb`
 
 ###What is `config.json`?
-- [JSON](json) formatted configuration file. It is of the structure:
+- [JSON](https://en.wikipedia.org/wiki/JSON) formatted configuration file. It is of the structure:
 ```javascript
 {
 	"prefix|namespace|xpath_action": {
@@ -24,7 +24,7 @@ All curate files have been paved over, the only files here are now the conversio
 }
 ```
 
-These would evaluate to (in the conversion code) an [XPATH](xpath) of:
+These would evaluate to (in the conversion code) an [XPATH](https://en.wikipedia.org/wiki/Xpath) of:
 - `.//prefix:tag/text()`: grab the text from elements that match the search path `.//prefix:tag` and place the value in MODEL.model_attribute_name
 - `.//prefix:tag2/text()`: grab the text from elements that match the search path `.//prefix:tag2` and place the value in MODEL.model_attribute_name2
 - `.//@xlink:href`: grab the value of the href element of elements that match the search path and place the values in the list MODEL.items
@@ -32,7 +32,3 @@ These would evaluate to (in the conversion code) an [XPATH](xpath) of:
 The code doing this can be found in `collection_builder.rb` lines 29-33
 
 Note: attribute names ending in an 's' denote lists: so `"some_tag": "files"` would put everything in the list MODEL.files
-
----
-[json]: https://en.wikipedia.org/wiki/JSON
-[xpath]: https://en.wikipedia.org/wiki/Xpath
