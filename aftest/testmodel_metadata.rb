@@ -1,4 +1,4 @@
-
+require 'active_fedora'
 class TestmodelMetadata < ActiveFedora::OmDatastream
 
   # Define a terminology for parsing this XML document

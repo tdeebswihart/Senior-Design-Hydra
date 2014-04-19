@@ -1,11 +1,8 @@
-#for bundle install
-require 'bundler/setup'
 #necessary if you want to use it as a base for your model
 require 'active_fedora'
 #yada yada local copy of metadata
-require File.join(File.dirname(__FILE__), 'testmodel_metadata.rb')
+require './testmodel_metadata.rb'
 #now we can bundle install and it'll work!
-Bundler.require
 
 class Testmodel < ActiveFedora::Base
   
