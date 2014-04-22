@@ -3,11 +3,13 @@ require './model_builder'
 require 'fileutils'
 require 'json'
 
+
+
 class Driver
 
 	def parse_config(filename) 
 		@config = JSON.parse(File.read(filename))
-		@builder = CollectionBuilder.new
+		@builder = ModelBuilder.new
 	end
 
 	def unzip(dir)

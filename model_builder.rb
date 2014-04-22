@@ -2,7 +2,16 @@
 require 'nokogiri'
 require "./models/trivial_collection"
 # require "./models/trivial_model"
-class CollectionBuilder
+
+# This class is meant to build a ActiveFedora Model
+# from an XML file of an AIP export.
+class ModelBuilder
+
+	# The base method of ModelBuilder
+	# It creates a nex colection from a supplied mapping and XML tile.
+	# Params:
+	# +xmlfname+:: The path to the XML file to read from.
+	# +translation_map+:: A JSON formatted mapping, as defined in the manual.
 	def build(xmlfname, translation_map)
 		xml_file = File.open(xmlfname, 'r')
 		doc = Nokogiri::XML(xml_file)
