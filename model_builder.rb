@@ -32,7 +32,7 @@ class CollectionBuilder
 					# dealing with an attribute we can have multiple of
 					attr_nonplural = attr[0..-2] # strip the s
 					puts val
-					collection.send("add_#{attr.intern}", val.value)
+					collection.send("add_#{attr_nonplural.intern}", val.value)
 				else
 					# val = val[0].text
 					collection.send("#{attr.intern}=", val)
