@@ -25,7 +25,7 @@ class Driver
 
 			if item.split('@').length == 2
 				# DSpace model
-				puts "Extracted #{basename}, ready to hydrate item model"
+				# puts "Extracted #{basename}, ready to hydrate item model"
 				# should call other code, then clean up the extracted zip file here
 				# this should call the BUILD_MODEL code
 			elsif item.split('aip').length > 1
@@ -38,7 +38,7 @@ class Driver
 			# Clean up directories after
 			FileUtils.rm_rf(File.join(dir, basename))
 		end
-		puts "All items extracted, ready to augment collection with items"
+		# puts "All items extracted, ready to augment collection with items"
 	end
 end
 

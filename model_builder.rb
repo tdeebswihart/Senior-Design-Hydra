@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 require 'nokogiri'
 require "./models/trivial_collection"
-# require "./models/trivial_model"
 
 # This class is meant to build a ActiveFedora Model
 # from an XML file of an AIP export.
@@ -16,6 +15,8 @@ class ModelBuilder
 		xml_file = File.open(xmlfname, 'r')
 		doc = Nokogiri::XML(xml_file)
 
+		# TODO: Instead of instantiating the object here have it be passed in: that way
+		# both the model and collection branches can use the same translation code
 		collection = TrivialCollection.new
 		translation_map.each_pair do |prefix_with_namespace, tags|
 			parts = prefix_with_namespace.split("|")
