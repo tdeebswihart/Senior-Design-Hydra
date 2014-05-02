@@ -24,9 +24,9 @@ All curate files have been paved over, the only files here are now the conversio
 ```
 
 These would evaluate to (in the conversion code) an [XPATH](https://en.wikipedia.org/wiki/Xpath) of:
-- `.//prefix:tag/text()`: grab the text from elements that match the search path `.//prefix:tag` and place the value in MODEL.model_attribute_name
-- `.//prefix:tag2/text()`: grab the text from elements that match the search path `.//prefix:tag2` and place the value in MODEL.model_attribute_name2
-- `.//@xlink:href`: grab the value of the href element of elements that match the search path and place the values in the list MODEL.items
+- `.//prefix:tag/text()`: grabs the text from elements that match the search path `.//prefix:tag` and place the value in MODEL.model_attribute_name
+- `.//prefix:tag2/text()`: grabs the text from elements that match the search path `.//prefix:tag2` and place the value in MODEL.model_attribute_name2
+- `.//@xlink:href`: grabs the value of the href element of elements that match the search path and place the values in the list MODEL.items
 
 
 ### Other notes
